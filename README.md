@@ -10,8 +10,8 @@ Cron jobs for mautic 5
 
 # cyberpanel cron-jobs
 
- 2 * * * * /usr/local/lsws/lsphp81/bin/php /home/talent-logic.com/public_html/bin/console mautic:segments:update 
-    3 * * * *     /usr/local/lsws/lsphp81/bin/php /var/www/html/bin/console mautic:campaigns:rebuild > /var/log/cron.pipe 2>&1
+         2 * * * * /usr/local/lsws/lsphp81/bin/php /home/talent-logic.com/public_html/bin/console mautic:segments:update 
+         3 * * * *     /usr/local/lsws/lsphp81/bin/php /var/www/html/bin/console mautic:campaigns:rebuild > /var/log/cron.pipe 2>&1
          5 * * * *     /usr/local/lsws/lsphp81/bin/php /var/www/html/bin/console mautic:campaigns:trigger > /var/log/cron.pipe 2>&1
          * 1 * * *  /usr/local/lsws/lsphp81/bin/php /var/www/html/bin/console mautic:custom-field:create-column
          1 * * * * /usr/local/lsws/lsphp81/bin/php /var/www/html/bin/console messenger:consume email
