@@ -7,3 +7,7 @@ Cron jobs for mautic 5
          * 1 * * *  php /var/www/html/bin/console mautic:custom-field:create-column
          1 * * * * php /var/www/html/bin/console messenger:consume email
          2 * * * * php /var/www/html/bin/console mautic:email:fetch
+
+# cyberpanel cron-jobs
+
+/usr/local/lsws/lsphp81/bin/php /home/talent-logic.com/public_html/bin/console mautic:segments:update 
